@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Submission</title>
+    <link rel="stylesheet" href="submission.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="thanks">Thank you for submitting our form!</h1>
+      <h2>We will be in touch with you shortly!</h2>
+      <div id="output"></div>
+    </main>
+    <script>
+      const json = localStorage.getItem("form");
+      const obj = JSON.parse(json);
+
+      for (key in obj) {
+        const markup = `
+          <div>
+            <span>
+              ${key}: <div style="color: gray">${obj[key]}<div>
+            </span>
+          </div>
+          <br
+        `;
+        document.getElementById("output").innerHTML += markup;
+      }
+    </script>
+  </body>
+</html>

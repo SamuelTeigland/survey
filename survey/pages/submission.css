@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #cc4b4b;
+    text-align: center;
+    font-family: inherit;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: inherit;
+}
+
+#output {
+    font-size: 24px;
+    font-family: inherit;
+    float: left;
+    position: relative;
+    left: 30%;
+    color: black;
+}
